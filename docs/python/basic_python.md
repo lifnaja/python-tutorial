@@ -15,10 +15,11 @@
 ### Variables and Types
 
 อธิบายเรื่อง primitive type
-· Integer
-· Float
-· Boolean
-· String
+
+- Integer
+- Float
+- Boolean
+- String
 
 <div data-datacamp-exercise data-lang="python" data-height="auto">
 <code data-type="pre-exercise-code"></code>
@@ -26,16 +27,19 @@
     # Integer
     a = 5
     print(type(a))
+    print(isinstance(a, int))
 
     # Float
     b = 10.11
     print(type(b))
 
     # Boolean
-    d = True
-    print(type(d))
+    c = True
+    print(type(c))
 
-    print(isinstance(d, bool))
+    # String
+    d = "Hello"
+    print(type(d))
 </code>
 <code data-type="solution"></code>
 

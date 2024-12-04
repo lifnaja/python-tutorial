@@ -21,7 +21,7 @@ number = 7 % 3
 print(number)
 ```
 
-- power operator (%)
+- power operator (**)
 
 ```py linenums="1"
 squared = 7 ** 2
@@ -31,6 +31,7 @@ print(cubed)
 ```
 
 - floor division (//)
+
 ```py linenums="1"
 num = 7 // 2
 print(num)
@@ -45,11 +46,10 @@ print(num)
 str1 = "Hello"
 str2 = "World"
 result = str1 + " " + str2
+
 print(result)
 # f-string
-```
 
-```py linenums="1"
 a = 10
 b = 20
 result = f"The sum of {a} and {b} is {a + b}."
