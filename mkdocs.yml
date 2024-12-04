@@ -1,0 +1,25 @@
+site_name: Python for Data Engineering
+site_url: https://mydomain.org
+theme:
+  name: material
+
+extra_javascript:
+  - https://cdn.datacamp.com/dcl-react.js.gz
+
+nav:
+  - Home: index.md
+  - Python:
+    - Basic Python: python/basic_python.md
+    - Basic Operators: python/basic_operators.md
+    - List and Tuples: python/lists_tuples.md
+    - Dictionaries: python/dictionaries.md
+    - Function: python/function.md
+    - Classes and Objects: python/classes_and_objects.md
+    - Condition: python/condition.md
+    - Loops: python/loops.md
+    - Exception Handling: python/exception_handling.md
+    - Context Manager: python/context_manager.md
+    - Importing Modules: python/importing_modules.md
+    - Unit Test: python/unit_test.md
+  - Pandas:
+    - Pandas: pandas/pandas.md
