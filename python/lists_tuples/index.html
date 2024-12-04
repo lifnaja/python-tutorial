@@ -355,6 +355,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#list-tuple" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุปความแตกต่างระหว่าง List และ Tuple
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -667,6 +676,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#list-tuple" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุปความแตกต่างระหว่าง List และ Tuple
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -683,8 +701,68 @@
 
 
 <h1 id="list-and-tuples">List and Tuples</h1>
+<p>List และ Tuple เป็นโครงสร้างข้อมูลชนิดหนึ่งใน Python ที่ใช้สำหรับเก็บข้อมูลหลายๆ ค่าไว้ด้วยกัน แต่มีคุณสมบัติที่แตกต่างกัน</p>
 <h2 id="list">List</h2>
+<ul>
+<li>ความสามารถในการเปลี่ยนแปลง: List สามารถเพิ่ม ลบ หรือแก้ไขข้อมูลภายในได้หลังจากสร้างแล้ว ทำให้ List มีความยืดหยุ่นในการใช้งาน</li>
+<li>การประกาศ: ใช้เครื่องหมายวงเล็บเหลี่ยม [] ในการประกาศ</li>
+<li>การเข้าถึงข้อมูล: เข้าถึงข้อมูลใน List โดยใช้ index (เริ่มต้นที่ 0)</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>  <span class="c1"># List ที่เก็บตัวเลข</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">mixed_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>  <span class="c1"># List ที่เก็บค่าหลายชนิด</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># เข้าถึงค่าใน List</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># แก้ไขค่า</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># เพิ่มค่า</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># ลบค่า</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">my_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># ยาวของ List</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">))</span>
+</span></code></pre></div>
 <h2 id="tuples">Tuples</h2>
+<ul>
+<li>ความสามารถในการเปลี่ยนแปลง: Tuple ไม่สามารถเปลี่ยนแปลงข้อมูลภายในได้หลังจากสร้างแล้ว ทำให้ Tuple มีความปลอดภัยและเหมาะสำหรับเก็บข้อมูลที่ไม่ต้องการให้มีการแก้ไข</li>
+<li>การประกาศ: ใช้เครื่องหมายวงเล็บปีกกา () ในการประกาศ</li>
+<li>การเข้าถึงข้อมูล: เข้าถึงข้อมูลใน List โดยใช้ index (เริ่มต้นที่ 0)</li>
+</ul>
+<h2 id="list-tuple">สรุปความแตกต่างระหว่าง List และ Tuple</h2>
+<table>
+<thead>
+<tr>
+<th>คุณสมบัติ</th>
+<th><strong>List</strong></th>
+<th><strong>Tuple</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>การเปลี่ยนแปลงค่า</td>
+<td>เปลี่ยนแปลงค่าได้ (Mutable)</td>
+<td>เปลี่ยนแปลงค่าไม่ได้ (Immutable)</td>
+</tr>
+<tr>
+<td>การใช้งาน</td>
+<td>ใช้เมื่อค่าต้องเปลี่ยนแปลงได้</td>
+<td>ใช้เมื่อค่าคงที่</td>
+</tr>
+<tr>
+<td>การเขียน</td>
+<td><code>[]</code> (Square brackets)</td>
+<td><code>()</code> (Parentheses)</td>
+</tr>
+</tbody>
+</table>
 
 
 
