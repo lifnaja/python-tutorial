@@ -45,5 +45,6 @@ nav:
     - Context Manager: python/context_manager.md
     - Importing Modules: python/importing_modules.md
     - Unit Test: python/unit_test.md
+    - Virtual Environment: python/virtual_environment.md
   - Pandas:
     - Pandas: pandas/pandas.md
