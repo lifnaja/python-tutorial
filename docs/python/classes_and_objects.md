@@ -45,16 +45,17 @@ class Cat:
     def meow(self):
         print(self.name, "says Meow!")
 
-    cat1 = Cat("Kitty", "Black")
-    cat2 = Cat("Mittens", "White")
 
-    # เข้าถึง attributes
-    print(cat1.name)
-    print(cat2.color)
+cat1 = Cat("Kitty", "Black")
+cat2 = Cat("Mittens", "White")
 
-    # เรียกใช้ method
-    cat1.meow()
-    cat2.meow()
+# เข้าถึง attributes
+print(cat1.name)
+print(cat2.color)
+
+# เรียกใช้ method
+cat1.meow()
+cat2.meow()
 ```
 
 

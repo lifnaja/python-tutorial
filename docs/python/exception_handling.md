@@ -9,8 +9,6 @@ try:
     print(y)
 except ZeroDivisionError:
     print("คุณไม่สามารถหารด้วยศูนย์ได้")
-except TypeError:
-    print("ตัวหารต้องเป็นตัวเลขเท่านั้น")
 ```
 
 

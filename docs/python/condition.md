@@ -33,7 +33,7 @@ else:
 ```
 
 
-### And Or Not
+### And-Or-Not
 ```py linenums="1"
 x = 7
 y = 10
