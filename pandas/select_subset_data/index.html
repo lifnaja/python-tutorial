@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://lifnaja.github.io/python-for-data-engineer/python/dictionaries/">
+        <link rel="canonical" href="https://lifnaja.github.io/python-for-data-engineer/pandas/select_subset_data/">
       
       
-        <link rel="prev" href="../lists_tuples/">
+        <link rel="prev" href="../read_and_write_tabular_data/">
       
       
-        <link rel="next" href="../function/">
+        <link rel="next" href="../plots_in_pandas/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Dictionaries - Python for Data Engineering</title>
+        <title>Select subset data - Python for Data Engineering</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dictionaries" class="md-skip">
+        <a href="#select-subset-data" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dictionaries
+              Select subset data
             
           </span>
         </div>
@@ -210,19 +210,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -236,7 +234,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -250,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic_python/" class="md-nav__link">
+      <a href="../../python/basic_python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -271,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic_operators/" class="md-nav__link">
+      <a href="../../python/basic_operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -292,11 +290,307 @@
   
   
     <li class="md-nav__item">
-      <a href="../lists_tuples/" class="md-nav__link">
+      <a href="../../python/lists_tuples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     List and Tuples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/classes_and_objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/condition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Condition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/exception_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/context_manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/importing_modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Importing Modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/unit_test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/virtual_environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pandas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Pandas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_pandas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../read_and_write_tabular_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Read and Write Data
   </span>
   
 
@@ -326,7 +620,7 @@
           
   
   <span class="md-ellipsis">
-    Dictionaries
+    Select subset data
   </span>
   
 
@@ -337,7 +631,7 @@
         
   
   <span class="md-ellipsis">
-    Dictionaries
+    Select subset data
   </span>
   
 
@@ -359,20 +653,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dict" class="md-nav__link">
+  <a href="#select-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      ตัวอย่างการสร้าง dict
+      Select columns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Select columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-multiple-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select multiple columns
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#filter-rows" class="md-nav__link">
     <span class="md-ellipsis">
-      เข้าถึงค่าจาก key
+      Filter rows
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Filter rows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-specific-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select specific rows and columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -392,301 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../function/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Function
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../classes_and_objects/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Classes and Objects
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../condition/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Condition
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Loops
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exception_handling/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exception Handling
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../context_manager/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Context Manager
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../importing_modules/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Importing Modules
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../unit_test/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Unit Test
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../virtual_environment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Virtual Environment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Pandas
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Pandas
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pandas/intro_pandas/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pandas/read_and_write_tabular_data/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Read and Write Data
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pandas/select_subset_data/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Select subset data
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pandas/plots_in_pandas/" class="md-nav__link">
+      <a href="../plots_in_pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -734,20 +764,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dict" class="md-nav__link">
+  <a href="#select-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      ตัวอย่างการสร้าง dict
+      Select columns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Select columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-multiple-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select multiple columns
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#filter-rows" class="md-nav__link">
     <span class="md-ellipsis">
-      เข้าถึงค่าจาก key
+      Filter rows
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Filter rows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-specific-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select specific rows and columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -766,42 +826,40 @@
                   
 
 
-<h1 id="dictionaries">Dictionaries</h1>
-<p>โครงสร้างข้อมูลที่เก็บข้อมูลในรูปแบบคู่ของ key และ value ซึ่ง key ใช้ในการเข้าถึง value โดยสามารถเก็บข้อมูลหลายชนิดได้ (heterogeneous) และ key จะต้องไม่ซ้ำกัน</p>
-<p>key : สามารถเป็นได้หลายชนิด: เช่น string, int, float, tuple
-value: ค่าสามารถเป็นชนิดข้อมูลอะไรก็ได้</p>
-<h3 id="dict">ตัวอย่างการสร้าง dict</h3>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Bangkok&quot;</span><span class="p">}</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="key">เข้าถึงค่าจาก key</h3>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Bangkok&quot;</span><span class="p">}</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
-</span></code></pre></div>
-<p>การใช้ get() เพื่อเข้าถึง value (ถ้า key ไม่มีจะคืนค่า None หรือค่าที่กำหนด)
-<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Bangkok&quot;</span><span class="p">}</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;city&quot;</span><span class="p">))</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">))</span>
-</span></code></pre></div></p>
-<p>การเพิ่มข้อมูล การแก้ไขข้อมูล การลบ และการใช้ pop
-<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># การเพิ่มข้อมูล</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;USA&quot;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># การแก้ไขข้อมูล</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># การลบข้อมูล</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">del</span> <span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">]</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># ใช้ pop() เพื่อลบและคืนค่าข้อมูล</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">age</span> <span class="o">=</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">)</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>
-</span></code></pre></div></p>
+<h1 id="select-subset-data">Select Subset data</h1>
+<p>ในส่วนนี้จะใช้ข้อมูลจาก <a href="https://github.com/pandas-dev/pandas/blob/main/doc/data/titanic.csv">titanic data</a></p>
+<h2 id="select-columns">Select columns</h2>
+<p><img alt="select_colums" src="../images/select_specific_columns.png" title="select_colums" /></p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">titanic</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/titanic.csv&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">ages</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="select-multiple-columns">Select multiple columns</h3>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">age_sex</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;Sex&quot;</span><span class="p">]]</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="filter-rows">Filter rows</h2>
+<p><img alt="select_rows" src="../images/filter_specific_rows.png" title="select_rows" /></p>
+<p>ตัวอย่าง การ filter ข้อมูลที่ <code>age</code> &gt; 35
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">age_above_35</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">35</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>ตัวอย่างการ filter ข้อมูลใน rows หลายเงื่อนไข
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="n">class_2_3</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[(</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)]</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="c1"># หรือสามารถรวม 2 condition ได้แบบนี้</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="n">class_2_3</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])]</span>
+</span></code></pre></div></td></tr></table></div></p>
+<h3 id="select-specific-rows-and-columns">Select specific rows and columns</h3>
+<p><img alt="select_rows_columns" src="../images/select_specific_rows_and_columns.png" title="select_rows_columns" /></p>
+<p>ตัวอย่าง การเลือกข้อมูล <code>Name</code> ที่ <code>Age</code> มากกว่า 35
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">adult_names</span> <span class="o">=</span> <span class="n">titanic</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">35</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div></p>
 
 
 

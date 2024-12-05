@@ -2,62 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/pandas/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/intro_pandas/</loc>
+         <lastmod>2024-12-05</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/plots_in_pandas/</loc>
+         <lastmod>2024-12-05</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/read_and_write_tabular_data/</loc>
+         <lastmod>2024-12-05</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/select_subset_data/</loc>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/basic_operators/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/basic_python/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/classes_and_objects/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/condition/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/context_manager/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/dictionaries/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/exception_handling/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/function/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/importing_modules/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/lists_tuples/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/loops/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/unit_test/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
     <url>
          <loc>https://lifnaja.github.io/python-for-data-engineer/python/virtual_environment/</loc>
-         <lastmod>2024-12-04</lastmod>
+         <lastmod>2024-12-05</lastmod>
     </url>
 </urlset>

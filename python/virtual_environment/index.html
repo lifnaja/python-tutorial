@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://lifnaja.github.io/python-for-data-engineer/python/virtual_environment/">
       
       
+        <link rel="prev" href="../unit_test/">
+      
+      
+        <link rel="next" href="../../pandas/intro_pandas/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -206,17 +210,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -230,7 +236,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -489,6 +495,85 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Virtual Environment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environment
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      การสร้างและใช้งาน Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      เครื่องมือในการจัดการ dependencies
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -538,11 +623,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas/pandas/" class="md-nav__link">
+      <a href="../../pandas/intro_pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pandas
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/read_and_write_tabular_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Read and Write Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/select_subset_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Select subset data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/plots_in_pandas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plot int Pandas
   </span>
   
 
@@ -579,6 +727,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      การสร้างและใช้งาน Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      เครื่องมือในการจัดการ dependencies
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -593,6 +767,49 @@
 
 
 <h1 id="virtual-environment">Virtual Environment</h1>
+<p>Virtual Environment หรือ สภาพแวดล้อมเสมือน ใน Python คือเครื่องมือที่ใช้เพื่อสร้างแยกสภาพแวดล้อมการพัฒนา (development environment) สำหรับโปรเจคหนึ่งๆ โดยไม่ให้กระทบกับระบบ Python หรือโปรเจคอื่นที่อาจใช้งาน Python เดียวกันอยู่ การใช้ Virtual Environment ช่วยให้คุณสามารถติดตั้งไลบรารีและเครื่องมือที่ต้องการแยกออกจากกันตามโปรเจค</p>
+<h2 id="virtual-environment_1">การสร้างและใช้งาน Virtual Environment</h2>
+<ul>
+<li>
+<p>การสร้าง Virtual Environment
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span></code></pre></div></p>
+<ul>
+<li><code>.venv</code>: ชื่อของ Virtual Environment ที่จะถูกสร้าง</li>
+</ul>
+</li>
+<li>
+<p>การเปิดใช้งาน Virtual Environment</p>
+<ul>
+<li>
+<p>Windows:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</span></code></pre></div></p>
+</li>
+<li>
+<p>macOS หรือ Linux:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div></p>
+</li>
+</ul>
+<p>เมื่อเปิดใช้งานแล้วจะเห็นชื่อ Virtual Environment แสดงอยู่ใน prompt เพื่อยืนยันว่าใช้งาน Virtual Environment แล้ว (เช่น (.venv))</p>
+</li>
+<li>
+<p>การติดตั้งไลบรารีใน Virtual Environment
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>httpx
+</span></code></pre></div></p>
+</li>
+<li>
+<p>การยกเลิกการใช้งาน Virtual Environment
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>deactivate
+</span></code></pre></div></p>
+</li>
+</ul>
+<h2 id="dependencies">เครื่องมือในการจัดการ dependencies</h2>
+<ul>
+<li><a href="https://python-poetry.org/">poetry</a></li>
+<li><a href="https://github.com/astral-sh/uv">uv</a></li>
+</ul>
 
 
 
