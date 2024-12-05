@@ -47,4 +47,7 @@ nav:
     - Unit Test: python/unit_test.md
     - Virtual Environment: python/virtual_environment.md
   - Pandas:
-    - Pandas: pandas/pandas.md
+    - Intro: pandas/intro_pandas.md
+    - Read and Write Data: pandas/read_and_write_tabular_data.md
+    - Select subset data: pandas/select_subset_data.md
+    - Plot int Pandas: pandas/plots_in_pandas.md
