@@ -1,5 +1,9 @@
+repo_name: lifnaja/python-for-data-engineer
 site_name: Python for Data Engineering
 site_url: https://lifnaja.github.io/python-for-data-engineer/
+repo_url: https://github.com/lifnaja/python-for-data-engineer
+
+
 theme:
   name: material
   features:
