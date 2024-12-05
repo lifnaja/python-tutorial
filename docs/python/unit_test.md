@@ -49,4 +49,4 @@ if __name__ == "__main__":
 ```bash
 python test_math_operations
 ```
-![unit_test_reuslt](../images/unit_test_reuslt.png "unit_test_reuslt")
+![unit_test_reuslt](images/unit_test_reuslt.png "unit_test_reuslt")

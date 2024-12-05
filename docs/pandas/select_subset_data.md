@@ -5,7 +5,7 @@
 
 ## Select columns
 
-![select_colums](../images/select_specific_columns.png "select_colums")
+![select_colums](images/select_specific_columns.png "select_colums")
 
 
 ```py linenums="1"
@@ -22,7 +22,7 @@ age_sex = titanic[["Age", "Sex"]]
 
 ## Filter rows
 
-![select_rows](../images/filter_specific_rows.png "select_rows")
+![select_rows](images/filter_specific_rows.png "select_rows")
 
 ตัวอย่าง การ filter ข้อมูลที่ `age` > 35
 ```py linenums="6"
@@ -39,7 +39,7 @@ class_2_3 = titanic[titanic["Pclass"].isin([2, 3])]
 
 ### Select specific rows and columns
 
-![select_rows_columns](../images/select_specific_rows_and_columns.png "select_rows_columns")
+![select_rows_columns](images/select_specific_rows_and_columns.png "select_rows_columns")
 
 
 ตัวอย่าง การเลือกข้อมูล `Name` ที่ `Age` มากกว่า 35

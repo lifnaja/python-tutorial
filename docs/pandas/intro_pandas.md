@@ -4,7 +4,7 @@
 
 **DataFrame** เป็นโครงสร้างข้อมูลสองมิติที่สามารถเก็บข้อมูลประเภทต่างๆ ในคอลัมน์ คล้ายกับ spreadsheet, table ใน sql
 
-![dataframe](../images/dataframe.png "dataframe")
+![dataframe](images/dataframe.png "dataframe")
 
 ตัวอย่างการสร้าง datafame โดยใช้ dict key ของ dict จะเป็นชื่อ column และ values ที่อยู่ใน list จะเป็นข้อมูลใน columns
 

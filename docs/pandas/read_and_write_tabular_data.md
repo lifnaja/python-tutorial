@@ -3,7 +3,7 @@
 pandas สามารถอ่านข้อมูลจากไฟล์ได้หลายประเภท เพื่อนำมาวิเคราห์
 
 
-![dataframe](../images/read_and_write_tabular.png "dataframe")
+![dataframe](images/read_and_write_tabular.png "dataframe")
 
 
 ตัวอย่าง อ่านข้อมูลจาก csv
