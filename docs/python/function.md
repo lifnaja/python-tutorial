@@ -46,7 +46,7 @@ def print_info(**kwargs):
 
 print(add_all(1, 2, 3, 4))
 
-print_info(name="Alice", age=25, city="Bangkok")
+print(name="Alice", age=25, city="Bangkok")
 ```
 
 
