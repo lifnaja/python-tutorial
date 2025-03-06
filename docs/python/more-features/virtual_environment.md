@@ -33,7 +33,3 @@ pip install httpx
 ```bash
 deactivate
 ```
-
-## เครื่องมือในการจัดการ dependencies
- - [poetry](https://python-poetry.org/)
- - [uv](https://github.com/astral-sh/uv)

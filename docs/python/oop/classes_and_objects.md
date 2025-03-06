@@ -2,14 +2,10 @@
 
 Objects คือการรวบรวมตัวแปรและฟังก์ชันเข้าไว้ในหน่วยเดียวกัน วัตถุจะได้รับตัวแปรและฟังก์ชันมาจาก Classes ซึ่ง Classes ทำหน้าที่เป็น template สำหรับการสร้าง Objects
 
-<!--
-Objects are an encapsulation of variables and functions into a single entity. Objects get their variables and functions from classes. Classes are essentially a template to create your objects.
-Classs
- -->
 
 ตัวอย่างการสร้าง class และ object
 
-```py
+```py linenums="1"
 class ชื่อคลาส:
     # ตัวแปรของ class (class attributes)
     ตัวแปร = ค่าเริ่มต้น
