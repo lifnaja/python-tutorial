@@ -1,4 +1,4 @@
-# Condition
+# conditionals
 
 ใน Python, Condition  ที่ใช้ในการตรวจสอบค่าและตัดสินใจว่าจะทำอะไรในกรณีต่าง ๆ โดยใช้คำสั่ง เช่น if, elif, และ else
 

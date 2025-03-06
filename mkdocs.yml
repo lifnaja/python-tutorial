@@ -1,7 +1,7 @@
-repo_name: lifnaja/python-for-data-engineer
-site_name: Python for Data Engineering
-site_url: https://lifnaja.github.io/python-for-data-engineer/
-repo_url: https://github.com/lifnaja/python-for-data-engineer
+repo_name: lifnaja/python-tutorial
+site_name: Python tutorial
+site_url: https://lifnaja.github.io/python-tutorial/
+repo_url: https://github.com/lifnaja/python-tutorial
 
 
 theme:
@@ -31,24 +31,31 @@ markdown_extensions:
   - pymdownx.details
 
 
-extra_javascript:
-  - https://cdn.datacamp.com/dcl-react.js.gz
-
 nav:
   - Home: index.md
-  - Python:
-    - Basic Python: python/basic_python.md
-    - Basic Operators: python/basic_operators.md
+  - Python Basics:
+    - Introduction to Python: python/1_basic_python.md
+    - Basic Operators: python/2_basic_operators.md
+    - Strings & String Manipulation: python/3_strings.md
+    - Conditionals (if-else): python/4_conditionals.md
+
+
+    - Loops (for, while): python/4_loops.md
+    - Functions: python/5_functions.md
+    - Importing Modules: python/6_importing_modules.md
     - List and Tuples: python/lists_tuples.md
     - Dictionaries: python/dictionaries.md
     - Function: python/function.md
+  - Data Structures:
     - Classes and Objects: python/classes_and_objects.md
     - Condition: python/condition.md
     - Loops: python/loops.md
     - Exception Handling: python/exception_handling.md
     - Context Manager: python/context_manager.md
+  - Object-Oriented Programming:
     - Importing Modules: python/importing_modules.md
     - Unit Test: python/unit_test.md
+  - More Python Features:
     - Virtual Environment: python/virtual_environment.md
   - Pandas:
     - Intro: pandas/intro_pandas.md
