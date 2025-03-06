@@ -33,32 +33,32 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Python Basics:
-    - Introduction to Python: python/1_basic_python.md
-    - Basic Operators: python/2_basic_operators.md
-    - Strings & String Manipulation: python/3_strings.md
-    - Conditionals (if-else): python/4_conditionals.md
+  - Python:
+    - Python Basic:
+      - Introduction to Python: python/python-basic/basic_python.md
+      - Basic Operators: python/python-basic/basic_operators.md
+      - Strings & String Manipulation: python/python-basic/strings.md
+      - Conditionals (if-else): python/python-basic/conditionals.md
+      - Loops (for, while): python/python-basic/loops.md
+      - Functions: python/python-basic/function.md
+      - Importing Modules: python/python-basic/importing_modules.md
+      - List and Tuples: python/python-basic/lists_tuples.md
+      - Dictionaries: python/python-basic/dictionaries.md
+
+    - Object-Oriented Programming:
+      - Classes and Objects: python/oop/classes_and_objects.md
+
+    - More Python Features:
+      - Exception Handling: python/more-features/exception_handling.md
+      - Context Manager: python/more-features/context_manager.md
+      - Unit Test: python/more-features/unit_test.md
+      - Virtual Environment: python/more-features/virtual_environment.md
+      - Dependencies Management: python/more-features/dependencies_management.md
 
 
-    - Loops (for, while): python/4_loops.md
-    - Functions: python/5_functions.md
-    - Importing Modules: python/6_importing_modules.md
-    - List and Tuples: python/lists_tuples.md
-    - Dictionaries: python/dictionaries.md
-    - Function: python/function.md
-  - Data Structures:
-    - Classes and Objects: python/classes_and_objects.md
-    - Condition: python/condition.md
-    - Loops: python/loops.md
-    - Exception Handling: python/exception_handling.md
-    - Context Manager: python/context_manager.md
-  - Object-Oriented Programming:
-    - Importing Modules: python/importing_modules.md
-    - Unit Test: python/unit_test.md
-  - More Python Features:
-    - Virtual Environment: python/virtual_environment.md
-  - Pandas:
-    - Intro: pandas/intro_pandas.md
-    - Read and Write Data: pandas/read_and_write_tabular_data.md
-    - Select subset data: pandas/select_subset_data.md
-    - Plot int Pandas: pandas/plots_in_pandas.md
+
+  # - Pandas:
+  #   - Intro: pandas/intro_pandas.md
+  #   - Read and Write Data: pandas/read_and_write_tabular_data.md
+  #   - Select subset data: pandas/select_subset_data.md
+  #   - Plot int Pandas: pandas/plots_in_pandas.md
