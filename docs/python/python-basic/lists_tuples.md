@@ -95,3 +95,15 @@ print(my_list[::2])
 print(my_list[::-1])
 # ผลลัพธ์: [7, 6, 5, 4, 3, 2, 1]
 ```
+
+### String Indexing & Slicing
+
+```py linenums="1"
+text = "Hello, World!"
+
+print(text[0])   # H
+print(text[-1])  # !
+print(text[0:5]) # Hello
+print(text[:5])  # Hello (เริ่มจาก index 0)
+print(text[7:])  # World! (ถึงตัวสุดท้าย)
+```
