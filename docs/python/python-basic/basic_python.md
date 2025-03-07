@@ -23,7 +23,7 @@ python --version
 ```bash linenums="1"
 python
 ```
-![python_repl](images/python_repl.png)
+![python_repl](../images/python_repl.png)
 
 ### Run ไฟล์ `.py`
 
