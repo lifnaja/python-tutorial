@@ -39,6 +39,7 @@ nav:
       - Basic Operators: python/python-basic/basic_operators.md
       - Strings & String Manipulation: python/python-basic/strings.md
       - Input Function: python/python-basic/input_function.md
+      - Comment: python/python-basic/comments.md
       - Conditionals (if-else): python/python-basic/conditionals.md
       - Loops (for, while): python/python-basic/loops.md
       - Functions: python/python-basic/function.md
