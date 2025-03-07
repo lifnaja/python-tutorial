@@ -1,8 +1,11 @@
 # Exception handling
-การข้อผิดพลาดที่เกิดขึ้นในระหว่างการทำงานของโปรแกรม โดยไม่ให้โปรแกรมหยุดทำงานทันที เมื่อเกิดข้อผิดพลาด (exception) ขึ้น เช่น การหารด้วยศูนย์
+Exception Handling คือการจัดการข้อผิดพลาดที่เกิดขึ้นขณะรันโปรแกรม เพื่อป้องกันไม่ให้โปรแกรมหยุดทำงานกะทันหัน
 
+Python มีการจัดการข้อผิดพลาดด้วย try-except ซึ่งช่วยให้เราสามารถจัดการกับ Exception ที่เกิดได้
+
+## try except
 ตัวอย่างการใช้ try except
-```py
+```py linenums="1"
 try:
     x = 0
     y = 10 / x
@@ -13,7 +16,7 @@ except ZeroDivisionError:
 
 
 เราสามารถใช้ except หลายๆ อัน เพื่อจัดการกับข้อผิดพลาด หลายๆ แบบได้
-```py
+```py linenums="1"
 try:
     x = "0"
     y = 10 / x
@@ -24,13 +27,14 @@ except TypeError:
     print("ตัวหารต้องเป็นตัวเลขเท่านั้น")
 ```
 
-?? ถ้าเปลี่ยนค่า `x เป็น True จะเกิด exception อะไร 
+**Question**
+ถ้าเปลี่ยนค่า `x` เป็น True ที่เป็น type boolean โปรแกรมจะเกิด error ?
 
 ### else, finally
 - else: จะทำงานเมื่อโค้ดใน try ไม่มีข้อผิดพลาดเกิดขึ้น
 - finally: จะทำงานเสมอหลังจาก try หรือ except ไม่ว่าจะเกิดข้อผิดพลาดหรือไม่
 
-```py
+```py linenums="1"
 try:
     num1 = 10
     num2 = 2
@@ -47,7 +51,7 @@ finally:
 
 ## Custom Exception
 
-เราสามารถสร้าง exception ของตัวเองโดยการ extend จาก Exception class
+เราสามารถสร้าง exception ของตัวเองโดยการ extend จาก class Exception
 ```py
 class CustomException(Exception):
     pass
