@@ -42,7 +42,24 @@ multiline string"""
     print('"-".join(["a", "b", "c"])')
     ```
 
-## String Formatting
+
+## String Concatenation
+
+การนำสตริง (string) มาต่อกันเป็นสตริงใหม่ ทำได้หลายวิธี
+
+- ใช้ + (บวก)
+    ```py linenums="1"
+    x = "Python is "
+    y = "awesome"
+    z =  x + y
+    print(z)
+    ```
+
+    ```py linenums="1"
+    a = "Hello"
+    b = "World"
+    c = a + " " + b
+    ```
 
 -  `f-Strings`
 
