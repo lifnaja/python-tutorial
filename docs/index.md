@@ -12,7 +12,8 @@
 - [Loops (for, while)](python/python-basic/loops.md)
 - [Functions](python/python-basic/function.md)
 - [Importing Modules](python/python-basic/importing_modules.md)
-- [Lists and Tuples](python/python-basic/lists_tuples.md)
+- [Lists](python/python-basic/lists.md)
+- [Tuples](python/python-basic/tuples.md)
 - [Dictionaries](python/python-basic/dictionaries.md)
 
 ### Object-Oriented Programming
