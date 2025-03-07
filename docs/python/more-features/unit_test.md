@@ -47,6 +47,6 @@ if __name__ == "__main__":
 ถ้าเรารัน file test  จะได้ผลลัพธ์เหมือนในรูป
 
 ```bash
-python test_math_operations
+python test_math_operations.py
 ```
 ![unit_test_reuslt](../images/unit_test_reuslt.png "unit_test_reuslt")
