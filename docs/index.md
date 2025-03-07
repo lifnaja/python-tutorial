@@ -6,6 +6,7 @@
 - [Introduction to Python](python/python-basic/basic_python.md)
 - [Basic Operators](python/python-basic/basic_operators.md)
 - [Strings & String Manipulation](python/python-basic/strings.md)
+- [Input Function](python/python-basic/input_function.md)
 - [Conditionals (if-else)](python/python-basic/conditionals.md)
 - [Loops (for, while)](python/python-basic/loops.md)
 - [Functions](python/python-basic/function.md)
