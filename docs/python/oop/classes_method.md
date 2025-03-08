@@ -63,3 +63,20 @@ class Employee:
     def is_high_salary(salary):
         return salary > 50000
 ```
+
+
+## Property Method
+เป็น Pythonic Way ในการทำให้เมธอด ถูกเรียกใช้งานเหมือนเป็น Attribute
+
+```py linenums="1"
+class Employee:
+    company = "TechCorp"
+
+    @property
+    def company_name(self):
+        return f"Commany name is {self.company}"
+
+
+emp = Employee()
+print(emp.company_name)
+```
