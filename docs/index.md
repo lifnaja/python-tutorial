@@ -18,6 +18,7 @@
 
 ### Object-Oriented Programming
 - [Classes and Objects](python/oop/classes_and_objects.md)
+- [Classes and Objects 2](python/oop/classes_method.md)
 
 ### More Python Features
 - [Exception Handling](python/more-features/exception_handling.md)
