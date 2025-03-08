@@ -35,8 +35,8 @@ class ชื่อคลาส:
 ```py linenums="1"
 class Cat:
     def __init__(self, name, color):
-        self.name = name  # ชื่อแมว (instance attribute)
-        self.color = color  # สีของแมว (instance attribute)
+        self.name = name
+        self.color = color
 
     def meow(self):
         print(self.name, "says Meow!")
@@ -70,7 +70,6 @@ class Animal:
 # คลาสลูก (Child class) สืบทอดจาก Animal
 class Cat(Animal):
     def __init__(self, name, color):
-    # เรียกใช้ __init__ ของ Animal (superclass)
         super().__init__(name)
         self.color = color
 
@@ -89,32 +88,17 @@ cat1.speak()  # Buddy says Meow!
 
 ```py linenums="1"
 # คลาสแม่ 1
-class Animal:
-    def __init__(self, name):
-        self.name = name
+class A:
+    def show(self):
+        return "A"
 
-    def speak(self):
-        print(f"{self.name} makes a sound.")
+class B():
+    def show(self):
+        return "B"
 
-# คลาสแม่ 2
-class Walker:
-    def walk(self):
-        print(f"{self.name} is walking.")
+class C(B, A):
+    pass
 
-# คลาสลูกที่สืบทอดจากทั้ง Animal และ Walker
-class Dog(Animal, Walker):
-    def __init__(self, name, breed):
-        # เรียกใช้ __init__ ของ Animal
-        super().__init__(name)
-        self.breed = breed
-
-    def speak(self):
-        print(f"{self.name} says Woof!")
-
-# สร้าง object
-dog = Dog("Buddy", "Golden Retriever")
-
-# เรียกใช้เมธอดจากทั้งสองคลาสแม่
-dog.speak()  # Buddy says Woof!
-dog.walk()   # Buddy is walking.
+obj = C()
+print(obj.show())  # B
 ```
