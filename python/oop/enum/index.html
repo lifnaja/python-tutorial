@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://lifnaja.github.io/python-tutorial/python/oop/classes_method/">
+        <link rel="canonical" href="https://lifnaja.github.io/python-tutorial/python/oop/enum/">
       
       
-        <link rel="prev" href="../classes_and_objects/">
+        <link rel="prev" href="../classes_method/">
       
       
-        <link rel="next" href="../enum/">
+        <link rel="next" href="../../more-features/exception_handling/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Classes and Objects 2 - Python tutorial</title>
+        <title>Enum - Python tutorial</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#classes-and-objects" class="md-skip">
+        <a href="#enum" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Classes and Objects 2
+              Enum
             
           </span>
         </div>
@@ -624,6 +624,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes_method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -633,14 +654,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Classes and Objects 2
+    Enum
   </span>
   
 
@@ -651,7 +670,7 @@
         
   
   <span class="md-ellipsis">
-    Classes and Objects 2
+    Enum
   </span>
   
 
@@ -663,8 +682,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -673,36 +690,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instance-method" class="md-nav__link">
+  <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
-      Instance Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#class-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Class Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#static-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Static Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#property-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Property Method
+      Enum
     </span>
   </a>
   
@@ -712,27 +702,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../enum/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Enum
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -939,8 +908,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -949,36 +916,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instance-method" class="md-nav__link">
+  <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
-      Instance Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#class-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Class Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#static-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Static Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#property-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Property Method
+      Enum
     </span>
   </a>
   
@@ -1002,38 +942,37 @@
   
 
 
-<h1 id="classes-and-objects">Classes and Objects</h1>
-<h2 id="instance-method">Instance Method</h2>
-<p>ใช้สำหรับ อ่าน/แก้ไขข้อมูลของ object</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span> <span class="nc">A</span><span class="p">():</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="k">def</span> <span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get_value</span><span class="p">())</span>
+  <h1>Enum</h1>
+
+<h2 id="enum">Enum</h2>
+<p>Enum (Enumeration) เป็น ประเภทข้อมูลพิเศษ ใน Python ใช้สร้าง ชุดค่าคงที่ ที่อ่านง่ายและเข้าใจง่าย</p>
+<ul>
+<li>ใช้แทน ค่าคงที่ (Constants) ที่มีความหมาย</li>
+<li>ทำให้โค้ด อ่านง่ายขึ้น แทนการใช้ตัวเลขหรือตัวอักษรธรรมดา</li>
+<li>ป้องกันข้อผิดพลาดจากการใช้ค่าผิดพลาด</li>
+</ul>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">class</span> <span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="n">GREEN</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="n">BLUE</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<h2 id="class-method">Class Method</h2>
-<p>ใช้สำหรับ อ่าน/แก้ไข Class Attribute</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<p>การใช้ Enum กับเงื่อนไข</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-11">11</a></span>
 <span class="normal"><a href="#__codelineno-1-12">12</a></span>
 <span class="normal"><a href="#__codelineno-1-13">13</a></span>
 <span class="normal"><a href="#__codelineno-1-14">14</a></span>
@@ -1043,83 +982,17 @@
 <span class="normal"><a href="#__codelineno-1-18">18</a></span>
 <span class="normal"><a href="#__codelineno-1-19">19</a></span>
 <span class="normal"><a href="#__codelineno-1-20">20</a></span>
-<span class="normal"><a href="#__codelineno-1-21">21</a></span>
-<span class="normal"><a href="#__codelineno-1-22">22</a></span>
-<span class="normal"><a href="#__codelineno-1-23">23</a></span>
-<span class="normal"><a href="#__codelineno-1-24">24</a></span>
-<span class="normal"><a href="#__codelineno-1-25">25</a></span>
-<span class="normal"><a href="#__codelineno-1-26">26</a></span>
-<span class="normal"><a href="#__codelineno-1-27">27</a></span>
-<span class="normal"><a href="#__codelineno-1-28">28</a></span>
-<span class="normal"><a href="#__codelineno-1-29">29</a></span>
-<span class="normal"><a href="#__codelineno-1-30">30</a></span>
-<span class="normal"><a href="#__codelineno-1-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">class</span> <span class="nc">A</span><span class="p">():</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="nd">@classmethod</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="k">def</span> <span class="nf">set_value_with_cls</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>        <span class="bp">cls</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>    <span class="k">def</span> <span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>    <span class="k">def</span> <span class="nf">set_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;set value `456` with out classmethod in object a1&quot;</span><span class="p">)</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="n">a1</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="s2">&quot;456&quot;</span><span class="p">)</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a1.value -&gt; </span><span class="si">{</span><span class="n">a1</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a2.value -&gt; </span><span class="si">{</span><span class="n">a2</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="n">b1</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="n">b2</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;set value `c` with classmethod in object b1&quot;</span><span class="p">)</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="n">b1</span><span class="o">.</span><span class="n">set_value_with_cls</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b1.value -&gt; </span><span class="si">{</span><span class="n">b1</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b2.value -&gt; </span><span class="si">{</span><span class="n">b2</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="static-method">Static Method</h2>
-<p>ฟังก์ชันที่เกี่ยวข้องกับคลาส แต่ไม่ต้องใช้ข้อมูลของอ็อบเจ็กต์หรือคลาส</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="n">company</span> <span class="o">=</span> <span class="s2">&quot;TechCorp&quot;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="nd">@staticmethod</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>    <span class="k">def</span> <span class="nf">is_high_salary</span><span class="p">(</span><span class="n">salary</span><span class="p">):</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>        <span class="k">return</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">50000</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="property-method">Property Method</h2>
-<p>เป็น Pythonic Way ในการทำให้เมธอด ถูกเรียกใช้งานเหมือนเป็น Attribute</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="n">company</span> <span class="o">=</span> <span class="s2">&quot;TechCorp&quot;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>    <span class="nd">@property</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="k">def</span> <span class="nf">company_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Commany name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">company</span><span class="si">}</span><span class="s2">&quot;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="n">emp</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">()</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">emp</span><span class="o">.</span><span class="n">company_name</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="k">def</span> <span class="nf">get_color_name</span><span class="p">(</span><span class="n">color</span><span class="p">):</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>    <span class="k">if</span> <span class="n">color</span> <span class="o">==</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">:</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>        <span class="k">return</span> <span class="s2">&quot;This is Red&quot;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="k">elif</span> <span class="n">color</span> <span class="o">==</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">:</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>        <span class="k">return</span> <span class="s2">&quot;This is Green&quot;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a>    <span class="k">elif</span> <span class="n">color</span> <span class="o">==</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">:</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>        <span class="k">return</span> <span class="s2">&quot;This is Blue&quot;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a>        <span class="k">return</span> <span class="s2">&quot;Unknown Color&quot;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">get_color_name</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 
 
