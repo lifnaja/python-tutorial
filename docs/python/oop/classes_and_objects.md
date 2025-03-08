@@ -87,7 +87,6 @@ cat1.speak()  # Buddy says Meow!
 การสืบทอดจากหลายคลาสใน Python สามารถทำได้โดยการระบุหลายคลาสในลำดับการสืบทอด (separated by commas) เมื่อคุณสร้างคลาสลูก (child class) ซึ่งจะสืบทอดคุณสมบัติและเมธอดจากคลาสทั้งสอง
 
 ```py linenums="1"
-# คลาสแม่ 1
 class A:
     def show(self):
         return "A"
@@ -100,5 +99,5 @@ class C(B, A):
     pass
 
 obj = C()
-print(obj.show())  # B
+print(obj.show())
 ```
