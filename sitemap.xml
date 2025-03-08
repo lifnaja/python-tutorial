@@ -1,75 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/intro_pandas/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/pandas/intro_pandas/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/plots_in_pandas/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/pandas/plots_in_pandas/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/read_and_write_tabular_data/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/pandas/read_and_write_tabular_data/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/pandas/select_subset_data/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/pandas/select_subset_data/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/basic_operators/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/context_manager/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/basic_python/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/dependencies_management/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/classes_and_objects/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/environment_variables/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/condition/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/exception_handling/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/context_manager/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/unit_test/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/dictionaries/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/more-features/virtual_environment/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/exception_handling/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/oop/classes_and_objects/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/function/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/oop/classes_method/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/importing_modules/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/basic_operators/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/lists_tuples/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/basic_python/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/loops/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/comments/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/unit_test/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/conditionals/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
     <url>
-         <loc>https://lifnaja.github.io/python-for-data-engineer/python/virtual_environment/</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/dictionaries/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/function/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/importing_modules/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/input_function/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/lists/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/loops/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/strings/</loc>
+         <lastmod>2025-03-08</lastmod>
+    </url>
+    <url>
+         <loc>https://lifnaja.github.io/python-tutorial/python/python-basic/tuples/</loc>
+         <lastmod>2025-03-08</lastmod>
     </url>
 </urlset>

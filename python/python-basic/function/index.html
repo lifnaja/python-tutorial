@@ -8,21 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://lifnaja.github.io/python-tutorial/pandas/select_subset_data/">
+        <link rel="canonical" href="https://lifnaja.github.io/python-tutorial/python/python-basic/function/">
       
       
+        <link rel="prev" href="../loops/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+        <link rel="next" href="../importing_modules/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
-        <title>Select Subset data - Python tutorial</title>
+        <title>Functions - Python tutorial</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#select-subset-data" class="md-skip">
+        <a href="#functions" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Python tutorial" class="md-header__button md-logo" aria-label="Python tutorial" data-md-component="logo">
+    <a href="../../.." title="Python tutorial" class="md-header__button md-logo" aria-label="Python tutorial" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Select Subset data
+              Functions
             
           </span>
         </div>
@@ -183,7 +187,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Python tutorial" class="md-nav__button md-logo" aria-label="Python tutorial" data-md-component="logo">
+    <a href="../../.." title="Python tutorial" class="md-nav__button md-logo" aria-label="Python tutorial" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -213,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -230,17 +234,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -254,7 +260,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -265,17 +271,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -289,7 +297,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Python Basic
@@ -303,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/basic_python/" class="md-nav__link">
+      <a href="../basic_python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -324,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/basic_operators/" class="md-nav__link">
+      <a href="../basic_operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -345,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/strings/" class="md-nav__link">
+      <a href="../strings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/input_function/" class="md-nav__link">
+      <a href="../input_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -387,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/comments/" class="md-nav__link">
+      <a href="../comments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/conditionals/" class="md-nav__link">
+      <a href="../conditionals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/loops/" class="md-nav__link">
+      <a href="../loops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,10 +455,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../python/python-basic/function/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -459,6 +487,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#function" class="md-nav__link">
+    <span class="md-ellipsis">
+      การสร้าง Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-default-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      การสร้าง Function พร้อมค่าเริ่มต้น (Default Parameters)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      ฟังก์ชันแบบไม่กำหนดจำนวน Arguments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -471,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/importing_modules/" class="md-nav__link">
+      <a href="../importing_modules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/lists/" class="md-nav__link">
+      <a href="../lists/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/tuples/" class="md-nav__link">
+      <a href="../tuples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/python-basic/dictionaries/" class="md-nav__link">
+      <a href="../dictionaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/oop/classes_and_objects/" class="md-nav__link">
+      <a href="../../oop/classes_and_objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/oop/classes_method/" class="md-nav__link">
+      <a href="../../oop/classes_method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -683,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/exception_handling/" class="md-nav__link">
+      <a href="../../more-features/exception_handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -704,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/context_manager/" class="md-nav__link">
+      <a href="../../more-features/context_manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/unit_test/" class="md-nav__link">
+      <a href="../../more-features/unit_test/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/environment_variables/" class="md-nav__link">
+      <a href="../../more-features/environment_variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -767,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/virtual_environment/" class="md-nav__link">
+      <a href="../../more-features/virtual_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/more-features/dependencies_management/" class="md-nav__link">
+      <a href="../../more-features/dependencies_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -844,50 +919,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#select-columns" class="md-nav__link">
+  <a href="#function" class="md-nav__link">
     <span class="md-ellipsis">
-      Select columns
+      การสร้าง Function
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Select columns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-multiple-columns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select multiple columns
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#filter-rows" class="md-nav__link">
+  <a href="#function-default-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Filter rows
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Filter rows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-specific-rows-and-columns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select specific rows and columns
+      การสร้าง Function พร้อมค่าเริ่มต้น (Default Parameters)
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      ฟังก์ชันแบบไม่กำหนดจำนวน Arguments
+    </span>
+  </a>
   
 </li>
       
@@ -909,39 +963,76 @@
   
 
 
-<h1 id="select-subset-data">Select Subset data</h1>
-<p>ในส่วนนี้จะใช้ข้อมูลจาก <a href="https://github.com/pandas-dev/pandas/blob/main/doc/data/titanic.csv">titanic data</a></p>
-<h2 id="select-columns">Select columns</h2>
-<p><img alt="select_colums" src="../images/select_specific_columns.png" title="select_colums" /></p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<h1 id="functions">Functions</h1>
+<p>Functions เป็นวิธีที่สะดวกในการแบ่งโค้ด ออกเป็นบล็อก ช่วยให้เราสามารถจัดระเบียบโค้ด ทำให้โค้ดอ่านง่ายขึ้น ใช้ซ้ำได้</p>
+<h2 id="function">การสร้าง Function</h2>
+<p>การสร้างฟังก์ชันใช้คำสั่ง <code>def</code> ตามด้วยชื่อฟังก์ชันและวงเล็บ () เช่น</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">math_operations.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">titanic</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/titanic.csv&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">sum_two_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">ages</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">sum_two_numbers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="select-multiple-columns">Select multiple columns</h3>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">age_sex</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;Sex&quot;</span><span class="p">]]</span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">math_operations.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">def</span> <span class="nf">sum_two_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">sum_two_numbers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<h2 id="filter-rows">Filter rows</h2>
-<p><img alt="select_rows" src="../images/filter_specific_rows.png" title="select_rows" /></p>
-<p>ตัวอย่าง การ filter ข้อมูลที่ <code>age</code> &gt; 35
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">age_above_35</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">35</span><span class="p">]</span>
-</span></code></pre></div></td></tr></table></div></p>
-<p>ตัวอย่างการ filter ข้อมูลใน rows หลายเงื่อนไข
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<h2 id="function-default-parameters">การสร้าง Function พร้อมค่าเริ่มต้น (Default Parameters)</h2>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">math_operations.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">sum_two_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="n">sum_two_numbers</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="arguments">ฟังก์ชันแบบไม่กำหนดจำนวน Arguments</h2>
+<p>Python รองรับการส่ง arguments แบบไม่จำกัดจำนวนโดยใช้
+ - <code>*args</code>  (Arguments)
+ - <code>**kwargs</code> (Keyword Arguments) ใช้สำหรับรับค่าพารามิเตอร์ในรูปแบบ key-value จำนวนไม่จำกัดเมื่อเรียกใช้ฟังก์ชัน</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
 <span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="n">class_2_3</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[(</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)]</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="c1"># หรือสามารถรวม 2 condition ได้แบบนี้</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="n">class_2_3</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])]</span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">def</span> <span class="nf">add_all</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">def</span> <span class="nf">print_info</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">add_all</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">&quot;Bangkok&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>หากฟังก์ชันรับ <em>args และ </em>*kwargs ต้องจัดลำดับดังนี้:
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">positional_args</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>    <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div></p>
-<h3 id="select-specific-rows-and-columns">Select specific rows and columns</h3>
-<p><img alt="select_rows_columns" src="../images/select_specific_rows_and_columns.png" title="select_rows_columns" /></p>
-<p>ตัวอย่าง การเลือกข้อมูล <code>Name</code> ที่ <code>Age</code> มากกว่า 35
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">adult_names</span> <span class="o">=</span> <span class="n">titanic</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">35</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">]</span>
+<p>ตัวอย่าง
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b: </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;args: </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;kwargs: </span><span class="si">{</span><span class="n">kwargs</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="n">example_function</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div></p>
 
 
@@ -989,10 +1080,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
